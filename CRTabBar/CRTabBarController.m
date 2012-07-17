@@ -1,11 +1,37 @@
+
+
+/*!
+ * \file CRTabBarController.m
+ *
+ * Copyright (c) 2011 Matthijs Hollemans
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
 #import "CRTabBarController.h"
 
 static const float TAB_BAR_HEIGHT = 50.0f;
 static const float TAB_BAR_WIDTH = 80.0f;
 static const int TABS_PER_ROW = 4;
 static const int MORE_BUTTON_INDEX = 3;
+static const int MORE_BUTTON_TAG = 3003;
 static const CGFloat screenHeight = 460.0;
-
 
 static const NSInteger TAG_OFFSET = 1000;
 
@@ -28,7 +54,6 @@ static const NSInteger TAG_OFFSET = 1000;
 @synthesize moreButtonPressed       = _moreButtonPressed;
 @synthesize fromController          = _fromController;
 @synthesize toController            = _toController;
-@synthesize selectedViewController  = _selectedViewController;
 
 - (void)addTabButtons
 {
@@ -41,8 +66,8 @@ static const NSInteger TAG_OFFSET = 1000;
 
 - (UIButton *)moreTabBarButton {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setImage: [UIImage imageNamed:@"ICN_more"] forState: UIControlStateNormal];
-    [button setImage: [UIImage imageNamed:@"ICN_more_ON"] forState: UIControlStateSelected];
+    
+    [self setImageForMoreButton:button];
     
     button.tag = TAG_OFFSET + MORE_BUTTON_INDEX;
     
@@ -65,9 +90,10 @@ static const NSInteger TAG_OFFSET = 1000;
     NSUInteger index = 0;
     
     for (UITabBarItem *tabBarItem in tabBarItems) {
-        if ([self shouldDisplayMoreButton] && index == (TABS_PER_ROW - 1)) 
+        if ([self shouldDisplayMoreButton] && index == MORE_BUTTON_INDEX) 
         {
             UIButton *button = [self moreTabBarButton];
+            button.tag = MORE_BUTTON_TAG;
             [self.tabButtonsContainerView addSubview:button];
         }
 
@@ -222,15 +248,29 @@ static const NSInteger TAG_OFFSET = 1000;
 		[self reloadTabButtons];
 }
 
+-(void)collapseTabBar
+{
+    self.moreButtonPressed = NO;
+    UIButton *moreButton = (UIButton *)[self.tabButtonsContainerView viewWithTag: MORE_BUTTON_TAG];
+    [self setImageForMoreButton: moreButton];
+
+    [self resizeTabBar];
+}
+
 - (void)setSelectedIndex:(NSUInteger)newSelectedIndex
 {
 	[self setSelectedIndex:newSelectedIndex animated:NO];
+    
 }
 
 - (void)setSelectedIndex:(NSUInteger)newSelectedIndex animated:(BOOL)animated
 {
+    self.moreButtonPressed = NO;
+    [self collapseTabBar];
+    
 	NSAssert(newSelectedIndex < [self.viewControllers count], @"View controller index out of bounds");
-
+    
+    
 	if ([self.delegate respondsToSelector:@selector(cr_tabBarController:shouldSelectViewController:atIndex:)])
 	{
 		self.toController = [self.viewControllers objectAtIndex:newSelectedIndex];
@@ -349,15 +389,22 @@ static const NSInteger TAG_OFFSET = 1000;
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.3];
     
-
     self.moreButtonPressed = !self.moreButtonPressed;
 
-    CGRect rect = CGRectMake(0, 0, 320, screenHeight - [self tabBarHeight]);        
-    self.contentContainerView.frame = rect;
-  
-    CGRect innerRect = CGRectMake(0, screenHeight - [self tabBarHeight], 320, [self tabBarHeight]);            
-	self.tabButtonsContainerView.frame = innerRect;
+    [self setImageForMoreButton:sender];
+    [self resizeTabBar];
     [UIView commitAnimations];
+}
+
+-(void)setImageForMoreButton: (UIButton *)moreButton
+{    
+    if(!self.moreButtonPressed) {
+        [moreButton setImage: [UIImage imageNamed:@"ICN_more"] forState: UIControlStateNormal];
+        [moreButton setImage: [UIImage imageNamed:@"ICN_more_ON"] forState: UIControlStateSelected];            
+    } else {
+        [moreButton setImage: [UIImage imageNamed:@"ICN_less_ON"] forState: UIControlStateNormal];
+        [moreButton setImage: [UIImage imageNamed:@"ICN_less_ON"] forState: UIControlStateSelected];        
+    }
 }
 
 -(void)hideTabBar {
@@ -381,13 +428,17 @@ static const NSInteger TAG_OFFSET = 1000;
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.5];
         
+    [self resizeTabBar];
+    [UIView commitAnimations];
+}
+
+-(void)resizeTabBar
+{
     CGRect rect = CGRectMake(0, 0, 320, screenHeight - [self tabBarHeight]);        
     self.contentContainerView.frame = rect;
     
     CGRect innerRect = CGRectMake(0, screenHeight - [self tabBarHeight], 320, [self tabBarHeight]);            
-	self.tabButtonsContainerView.frame = innerRect;
-    
-    [UIView commitAnimations];
+	self.tabButtonsContainerView.frame = innerRect;    
 }
 
 @end

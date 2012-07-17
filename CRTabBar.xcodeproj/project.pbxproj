@@ -85,6 +85,7 @@
 		AD42253315A344FB005A60C1 /* ICN_tab_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4224F415A344FB005A60C1 /* ICN_tab_search@2x.png */; };
 		AD42253415A344FB005A60C1 /* ICN_tab_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD4224F415A344FB005A60C1 /* ICN_tab_search@2x.png */; };
 		AD42253C15A34DE1005A60C1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD42253B15A34DE1005A60C1 /* README.md */; };
+		CAFEC65C15B5DDD500C637EB /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFEC65B15B5DDD500C637EB /* MainStoryboard_iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		AD4224F315A344FB005A60C1 /* ICN_tab_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICN_tab_search.png; sourceTree = "<group>"; };
 		AD4224F415A344FB005A60C1 /* ICN_tab_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ICN_tab_search@2x.png"; sourceTree = "<group>"; };
 		AD42253B15A34DE1005A60C1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		CAFEC65B15B5DDD500C637EB /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard_iPhone.storyboard; path = ../MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 				AD4224A215A33FF2005A60C1 /* InfoPlist.strings */,
 				AD4224A515A33FF2005A60C1 /* main.m */,
 				AD4224A715A33FF2005A60C1 /* CRTabBar-Prefix.pch */,
+				CAFEC65B15B5DDD500C637EB /* MainStoryboard_iPhone.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				AD42253115A344FB005A60C1 /* ICN_tab_search.png in Resources */,
 				AD42253315A344FB005A60C1 /* ICN_tab_search@2x.png in Resources */,
 				AD42253C15A34DE1005A60C1 /* README.md in Resources */,
+				CAFEC65C15B5DDD500C637EB /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

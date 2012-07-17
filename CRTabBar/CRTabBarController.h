@@ -26,6 +26,7 @@
 
 - (void)setSelectedIndex:(NSUInteger)index animated:(BOOL)animated;
 - (void)setSelectedViewController:(UIViewController *)viewController animated:(BOOL)animated;
+- (void)setTabBarItemsItems:(NSArray*)items animated:(BOOL)animated;
 - (void)hideTabBar;
 - (void)showTabBar;
 @end
@@ -34,7 +35,6 @@
  * The delegate protocol for CRTabBarController.
  */
 @protocol CRTabBarControllerDelegate <NSObject>
-
 @optional
 - (BOOL)cr_tabBarController:(CRTabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index;
 - (void)cr_tabBarController:(CRTabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index;
