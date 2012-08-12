@@ -1,34 +1,34 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
 
 @protocol CRTabBarControllerDelegate;
 
-@interface CRTabBarController : UIViewController
+@interface CRTabBarController : UIViewController <UIGestureRecognizerDelegate>
 
-@property (nonatomic, retain)   NSArray           *viewControllers;
-@property (nonatomic, retain)   UIViewController  *selectedViewController;
-@property (nonatomic, retain)   id                <CRTabBarControllerDelegate> delegate;
-@property (nonatomic, retain)   UIFont            *font;
-@property (nonatomic, assign)   CGSize            maxItemSize;
-@property (nonatomic, assign)   NSArray           *items;
-@property (nonatomic, retain)   NSMutableArray    *itemViews;
-@property (nonatomic, retain)   UIView            *tabButtonsContainerView;
-@property (nonatomic, retain)   UIView            *contentContainerView;
-@property (nonatomic, retain)   UIImageView       *moreItemView;
-@property (nonatomic, retain)   UITabBarItem      *moreTabBarItem;
-@property (nonatomic, assign)   UITabBarItem      *selectedItem;
-@property (nonatomic, assign)   NSUInteger        itemsPerRow;
-@property (nonatomic, readonly) NSUInteger        rows;
-@property (nonatomic, assign)   NSUInteger        selectedIndex;
-@property (nonatomic, assign)   BOOL              moreButtonPressed;
-@property (nonatomic, assign)   UIViewController  *fromController;
-@property (nonatomic, assign)   UIViewController  *toController;
+@property (nonatomic, retain)   NSArray             *viewControllers;
+@property (nonatomic, retain)   UIViewController    *selectedViewController;
+@property (nonatomic, retain)   id                  <CRTabBarControllerDelegate> delegate;
+@property (nonatomic, retain)   UIFont              *font;
+@property (nonatomic, assign)   CGSize              maxItemSize;
+@property (nonatomic, assign)   NSArray             *items;
+@property (nonatomic, retain)   NSMutableArray      *itemViews;
+@property (nonatomic, retain)   UIView              *tabButtonsContainerView;
+@property (nonatomic, retain)   UIView              *contentContainerView;
+@property (nonatomic, retain)   UIView              *shadowView;
+@property (nonatomic, retain)   UIImageView         *moreItemView;
+@property (nonatomic, assign)   NSUInteger          itemsPerRow;
+@property (nonatomic, readonly) NSUInteger          rows;
+@property (nonatomic, assign)   NSUInteger          selectedIndex;
+@property (nonatomic, assign)   BOOL                moreButtonPressed;
+@property (nonatomic, retain)   UIViewController    *fromController;
+@property (nonatomic, retain)   UIViewController    *toController;
+@property (nonatomic, retain)   NSMutableArray      *tabBarItems;
+@property (nonatomic, retain)   UIGestureRecognizer *tapGesture;
 
-- (void)setSelectedIndex:(NSUInteger)index animated:(BOOL)animated;
-- (void)setSelectedViewController:(UIViewController *)viewController animated:(BOOL)animated;
-- (void)setTabBarItemsItems:(NSArray*)items animated:(BOOL)animated;
 - (void)hideTabBar;
 - (void)showTabBar;
+- (void)setSelectedIndex:(NSUInteger)newSelectedIndex animated:(BOOL)animated;
 @end
 
 /*!
