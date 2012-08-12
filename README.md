@@ -2,8 +2,9 @@
 
 This is a custom container view controller for iOS 5 that works just like a regular UITabBarController, except the tabs are at the buttom and the more button expands up instead of taking you to a new table controller.
 
-![Screenshot](https://github.com/cmavromoustakos/crtabbar/raw/master/Screenshot.jpg)
-![Screenshot](https://github.com/cmavromoustakos/crtabbar/raw/master/Screenshot2.jpg)
+![Screenshot](https://github.com/cmavromoustakos/crtabbar/raw/master/iOS_Simulator.jpg)
+![Screenshot](https://github.com/cmavromoustakos/crtabbar/raw/master/iOS_Simulator-1.jpg)
+![Screenshot](https://github.com/cmavromoustakos/crtabbar/raw/master/iOS_Simulator-2.jpg)
 
 
 To use:
