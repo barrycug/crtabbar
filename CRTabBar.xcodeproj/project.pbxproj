@@ -114,6 +114,69 @@
 		CAA732BE15D79851000656BB /* ICN_tab_search_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7326315D79851000656BB /* ICN_tab_search_ON@2x.png */; };
 		CAA732BF15D79851000656BB /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA7326415D79851000656BB /* MainStoryboard_iPhone.storyboard */; };
 		CAA732C015D79851000656BB /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA7326415D79851000656BB /* MainStoryboard_iPhone.storyboard */; };
+		CAA732C315D79DAF000656BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4224A515A33FF2005A60C1 /* main.m */; };
+		CAA732C415D79DAF000656BB /* CRTabBarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4224A915A33FF2005A60C1 /* CRTabBarAppDelegate.m */; };
+		CAA732C515D79DAF000656BB /* CRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4224D215A34024005A60C1 /* CRTabBarController.m */; };
+		CAA732C715D79DAF000656BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA7321D15D796C8000656BB /* QuartzCore.framework */; };
+		CAA732C815D79DAF000656BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42249915A33FF2005A60C1 /* UIKit.framework */; };
+		CAA732C915D79DAF000656BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42249B15A33FF2005A60C1 /* Foundation.framework */; };
+		CAA732CA15D79DAF000656BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD42249D15A33FF2005A60C1 /* CoreGraphics.framework */; };
+		CAA732CC15D79DAF000656BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD4224A215A33FF2005A60C1 /* InfoPlist.strings */; };
+		CAA732CD15D79DAF000656BB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD42253B15A34DE1005A60C1 /* README.md */; };
+		CAA732CE15D79DAF000656BB /* ICN_account.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7323715D79851000656BB /* ICN_account.png */; };
+		CAA732CF15D79DAF000656BB /* ICN_account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7323815D79851000656BB /* ICN_account@2x.png */; };
+		CAA732D015D79DAF000656BB /* ICN_account_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7323915D79851000656BB /* ICN_account_ON.png */; };
+		CAA732D115D79DAF000656BB /* ICN_account_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7323A15D79851000656BB /* ICN_account_ON@2x.png */; };
+		CAA732D215D79DAF000656BB /* ICN_brand.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7323B15D79851000656BB /* ICN_brand.png */; };
+		CAA732D315D79DAF000656BB /* ICN_brand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7323C15D79851000656BB /* ICN_brand@2x.png */; };
+		CAA732D415D79DAF000656BB /* ICN_brand_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7323D15D79851000656BB /* ICN_brand_ON.png */; };
+		CAA732D515D79DAF000656BB /* ICN_brand_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7323E15D79851000656BB /* ICN_brand_ON@2x.png */; };
+		CAA732D615D79DAF000656BB /* ICN_home.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7323F15D79851000656BB /* ICN_home.png */; };
+		CAA732D715D79DAF000656BB /* ICN_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324015D79851000656BB /* ICN_home@2x.png */; };
+		CAA732D815D79DAF000656BB /* ICN_home_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324115D79851000656BB /* ICN_home_ON.png */; };
+		CAA732D915D79DAF000656BB /* ICN_home_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324215D79851000656BB /* ICN_home_ON@2x.png */; };
+		CAA732DA15D79DAF000656BB /* ICN_info.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324315D79851000656BB /* ICN_info.png */; };
+		CAA732DB15D79DAF000656BB /* ICN_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324415D79851000656BB /* ICN_info@2x.png */; };
+		CAA732DC15D79DAF000656BB /* ICN_info_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324515D79851000656BB /* ICN_info_ON.png */; };
+		CAA732DD15D79DAF000656BB /* ICN_info_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324615D79851000656BB /* ICN_info_ON@2x.png */; };
+		CAA732DE15D79DAF000656BB /* ICN_less.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324715D79851000656BB /* ICN_less.png */; };
+		CAA732DF15D79DAF000656BB /* ICN_less@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324815D79851000656BB /* ICN_less@2x.png */; };
+		CAA732E015D79DAF000656BB /* ICN_less_ON .png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324915D79851000656BB /* ICN_less_ON .png */; };
+		CAA732E115D79DAF000656BB /* ICN_less_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324A15D79851000656BB /* ICN_less_ON.png */; };
+		CAA732E215D79DAF000656BB /* ICN_less_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324B15D79851000656BB /* ICN_less_ON@2x.png */; };
+		CAA732E315D79DAF000656BB /* ICN_more.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324C15D79851000656BB /* ICN_more.png */; };
+		CAA732E415D79DAF000656BB /* ICN_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324D15D79851000656BB /* ICN_more@2x.png */; };
+		CAA732E515D79DAF000656BB /* ICN_more_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324E15D79851000656BB /* ICN_more_ON.png */; };
+		CAA732E615D79DAF000656BB /* ICN_more_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7324F15D79851000656BB /* ICN_more_ON@2x.png */; };
+		CAA732E715D79DAF000656BB /* ICN_recent.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325015D79851000656BB /* ICN_recent.png */; };
+		CAA732E815D79DAF000656BB /* ICN_recent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325115D79851000656BB /* ICN_recent@2x.png */; };
+		CAA732E915D79DAF000656BB /* ICN_recent_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325215D79851000656BB /* ICN_recent_ON.png */; };
+		CAA732EA15D79DAF000656BB /* ICN_recent_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325315D79851000656BB /* ICN_recent_ON@2x.png */; };
+		CAA732EB15D79DAF000656BB /* ICN_saved.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325415D79851000656BB /* ICN_saved.png */; };
+		CAA732EC15D79DAF000656BB /* ICN_saved@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325515D79851000656BB /* ICN_saved@2x.png */; };
+		CAA732ED15D79DAF000656BB /* ICN_saved_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325615D79851000656BB /* ICN_saved_ON.png */; };
+		CAA732EE15D79DAF000656BB /* ICN_saved_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325715D79851000656BB /* ICN_saved_ON@2x.png */; };
+		CAA732EF15D79DAF000656BB /* ICN_search.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325815D79851000656BB /* ICN_search.png */; };
+		CAA732F015D79DAF000656BB /* ICN_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325915D79851000656BB /* ICN_search@2x.png */; };
+		CAA732F115D79DAF000656BB /* ICN_search_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325A15D79851000656BB /* ICN_search_ON.png */; };
+		CAA732F215D79DAF000656BB /* ICN_search_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325B15D79851000656BB /* ICN_search_ON@2x.png */; };
+		CAA732F315D79DAF000656BB /* ICN_tab_info.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325C15D79851000656BB /* ICN_tab_info.png */; };
+		CAA732F415D79DAF000656BB /* ICN_tab_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325D15D79851000656BB /* ICN_tab_info@2x.png */; };
+		CAA732F515D79DAF000656BB /* ICN_tab_info_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325E15D79851000656BB /* ICN_tab_info_ON.png */; };
+		CAA732F615D79DAF000656BB /* ICN_tab_info_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7325F15D79851000656BB /* ICN_tab_info_ON@2x.png */; };
+		CAA732F715D79DAF000656BB /* ICN_tab_search.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7326015D79851000656BB /* ICN_tab_search.png */; };
+		CAA732F815D79DAF000656BB /* ICN_tab_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7326115D79851000656BB /* ICN_tab_search@2x.png */; };
+		CAA732F915D79DAF000656BB /* ICN_tab_search_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7326215D79851000656BB /* ICN_tab_search_ON.png */; };
+		CAA732FA15D79DAF000656BB /* ICN_tab_search_ON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAA7326315D79851000656BB /* ICN_tab_search_ON@2x.png */; };
+		CAA732FB15D79DAF000656BB /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA7326415D79851000656BB /* MainStoryboard_iPhone.storyboard */; };
+		CAA7330D15D79DE8000656BB /* my_first.feature in Resources */ = {isa = PBXBuildFile; fileRef = CAA7330415D79DE8000656BB /* my_first.feature */; };
+		CAA7330E15D79DE8000656BB /* launch_steps.rb in Resources */ = {isa = PBXBuildFile; fileRef = CAA7330615D79DE8000656BB /* launch_steps.rb */; };
+		CAA7330F15D79DE8000656BB /* env.rb in Resources */ = {isa = PBXBuildFile; fileRef = CAA7330815D79DE8000656BB /* env.rb */; };
+		CAA7331015D79DE8000656BB /* frank_static_resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CAA7330915D79DE8000656BB /* frank_static_resources.bundle */; };
+		CAA7331115D79DE8000656BB /* frankify.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CAA7330A15D79DE8000656BB /* frankify.xcconfig */; };
+		CAA7331215D79DE8000656BB /* libFrank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA7330B15D79DE8000656BB /* libFrank.a */; };
+		CAA7331315D79DE8000656BB /* libShelley.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA7330C15D79DE8000656BB /* libShelley.a */; };
+		CAA7331515D79E02000656BB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA7331415D79E02000656BB /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +256,16 @@
 		CAA7326215D79851000656BB /* ICN_tab_search_ON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICN_tab_search_ON.png; sourceTree = "<group>"; };
 		CAA7326315D79851000656BB /* ICN_tab_search_ON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ICN_tab_search_ON@2x.png"; sourceTree = "<group>"; };
 		CAA7326415D79851000656BB /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard_iPhone.storyboard; path = Resources/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CAA732FF15D79DAF000656BB /* CRTabBar copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CRTabBar copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA7330115D79DAF000656BB /* CRTabBar copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CRTabBar copy-Info.plist"; path = "/Users/gusm/Sandbox/crtabbar/CRTabBar copy-Info.plist"; sourceTree = "<absolute>"; };
+		CAA7330415D79DE8000656BB /* my_first.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = my_first.feature; sourceTree = "<group>"; };
+		CAA7330615D79DE8000656BB /* launch_steps.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = launch_steps.rb; sourceTree = "<group>"; };
+		CAA7330815D79DE8000656BB /* env.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
+		CAA7330915D79DE8000656BB /* frank_static_resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = frank_static_resources.bundle; sourceTree = "<group>"; };
+		CAA7330A15D79DE8000656BB /* frankify.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = frankify.xcconfig; sourceTree = "<group>"; };
+		CAA7330B15D79DE8000656BB /* libFrank.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFrank.a; sourceTree = "<group>"; };
+		CAA7330C15D79DE8000656BB /* libShelley.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libShelley.a; sourceTree = "<group>"; };
+		CAA7331415D79E02000656BB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,12 +290,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAA732C615D79DAF000656BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA7331515D79E02000656BB /* CFNetwork.framework in Frameworks */,
+				CAA732C715D79DAF000656BB /* QuartzCore.framework in Frameworks */,
+				CAA732C815D79DAF000656BB /* UIKit.framework in Frameworks */,
+				CAA732C915D79DAF000656BB /* Foundation.framework in Frameworks */,
+				CAA732CA15D79DAF000656BB /* CoreGraphics.framework in Frameworks */,
+				CAA7331215D79DE8000656BB /* libFrank.a in Frameworks */,
+				CAA7331315D79DE8000656BB /* libShelley.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		AD42248A15A33FF2005A60C1 = {
 			isa = PBXGroup;
 			children = (
+				CAA7331415D79E02000656BB /* CFNetwork.framework */,
+				CAA7330215D79DE8000656BB /* Frank */,
 				CAA7323615D79851000656BB /* Images */,
 				CAA7326415D79851000656BB /* MainStoryboard_iPhone.storyboard */,
 				CAA7321D15D796C8000656BB /* QuartzCore.framework */,
@@ -231,6 +320,7 @@
 				AD4224C015A33FF3005A60C1 /* CRTabBarTests */,
 				AD42249815A33FF2005A60C1 /* Frameworks */,
 				AD42249615A33FF2005A60C1 /* Products */,
+				CAA7330115D79DAF000656BB /* CRTabBar copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,6 +329,7 @@
 			children = (
 				AD42249515A33FF2005A60C1 /* CRTabBar.app */,
 				AD4224B915A33FF3005A60C1 /* CRTabBarTests.octest */,
+				CAA732FF15D79DAF000656BB /* CRTabBar copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,6 +448,44 @@
 			path = Resources/Images;
 			sourceTree = "<group>";
 		};
+		CAA7330215D79DE8000656BB /* Frank */ = {
+			isa = PBXGroup;
+			children = (
+				CAA7330315D79DE8000656BB /* features */,
+				CAA7330915D79DE8000656BB /* frank_static_resources.bundle */,
+				CAA7330A15D79DE8000656BB /* frankify.xcconfig */,
+				CAA7330B15D79DE8000656BB /* libFrank.a */,
+				CAA7330C15D79DE8000656BB /* libShelley.a */,
+			);
+			path = Frank;
+			sourceTree = "<group>";
+		};
+		CAA7330315D79DE8000656BB /* features */ = {
+			isa = PBXGroup;
+			children = (
+				CAA7330415D79DE8000656BB /* my_first.feature */,
+				CAA7330515D79DE8000656BB /* step_definitions */,
+				CAA7330715D79DE8000656BB /* support */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		CAA7330515D79DE8000656BB /* step_definitions */ = {
+			isa = PBXGroup;
+			children = (
+				CAA7330615D79DE8000656BB /* launch_steps.rb */,
+			);
+			path = step_definitions;
+			sourceTree = "<group>";
+		};
+		CAA7330715D79DE8000656BB /* support */ = {
+			isa = PBXGroup;
+			children = (
+				CAA7330815D79DE8000656BB /* env.rb */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -396,6 +525,23 @@
 			productReference = AD4224B915A33FF3005A60C1 /* CRTabBarTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		CAA732C115D79DAF000656BB /* CRTabBarIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAA732FC15D79DAF000656BB /* Build configuration list for PBXNativeTarget "CRTabBarIntegrationTests" */;
+			buildPhases = (
+				CAA732C215D79DAF000656BB /* Sources */,
+				CAA732C615D79DAF000656BB /* Frameworks */,
+				CAA732CB15D79DAF000656BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRTabBarIntegrationTests;
+			productName = CRTabBar;
+			productReference = CAA732FF15D79DAF000656BB /* CRTabBar copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -419,6 +565,7 @@
 			targets = (
 				AD42249415A33FF2005A60C1 /* CRTabBar */,
 				AD4224B815A33FF3005A60C1 /* CRTabBarTests */,
+				CAA732C115D79DAF000656BB /* CRTabBarIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -533,6 +680,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAA732CB15D79DAF000656BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA732CC15D79DAF000656BB /* InfoPlist.strings in Resources */,
+				CAA732CD15D79DAF000656BB /* README.md in Resources */,
+				CAA732CE15D79DAF000656BB /* ICN_account.png in Resources */,
+				CAA732CF15D79DAF000656BB /* ICN_account@2x.png in Resources */,
+				CAA732D015D79DAF000656BB /* ICN_account_ON.png in Resources */,
+				CAA732D115D79DAF000656BB /* ICN_account_ON@2x.png in Resources */,
+				CAA732D215D79DAF000656BB /* ICN_brand.png in Resources */,
+				CAA732D315D79DAF000656BB /* ICN_brand@2x.png in Resources */,
+				CAA732D415D79DAF000656BB /* ICN_brand_ON.png in Resources */,
+				CAA732D515D79DAF000656BB /* ICN_brand_ON@2x.png in Resources */,
+				CAA732D615D79DAF000656BB /* ICN_home.png in Resources */,
+				CAA732D715D79DAF000656BB /* ICN_home@2x.png in Resources */,
+				CAA732D815D79DAF000656BB /* ICN_home_ON.png in Resources */,
+				CAA732D915D79DAF000656BB /* ICN_home_ON@2x.png in Resources */,
+				CAA732DA15D79DAF000656BB /* ICN_info.png in Resources */,
+				CAA732DB15D79DAF000656BB /* ICN_info@2x.png in Resources */,
+				CAA732DC15D79DAF000656BB /* ICN_info_ON.png in Resources */,
+				CAA732DD15D79DAF000656BB /* ICN_info_ON@2x.png in Resources */,
+				CAA732DE15D79DAF000656BB /* ICN_less.png in Resources */,
+				CAA732DF15D79DAF000656BB /* ICN_less@2x.png in Resources */,
+				CAA732E015D79DAF000656BB /* ICN_less_ON .png in Resources */,
+				CAA732E115D79DAF000656BB /* ICN_less_ON.png in Resources */,
+				CAA732E215D79DAF000656BB /* ICN_less_ON@2x.png in Resources */,
+				CAA732E315D79DAF000656BB /* ICN_more.png in Resources */,
+				CAA732E415D79DAF000656BB /* ICN_more@2x.png in Resources */,
+				CAA732E515D79DAF000656BB /* ICN_more_ON.png in Resources */,
+				CAA732E615D79DAF000656BB /* ICN_more_ON@2x.png in Resources */,
+				CAA732E715D79DAF000656BB /* ICN_recent.png in Resources */,
+				CAA732E815D79DAF000656BB /* ICN_recent@2x.png in Resources */,
+				CAA732E915D79DAF000656BB /* ICN_recent_ON.png in Resources */,
+				CAA732EA15D79DAF000656BB /* ICN_recent_ON@2x.png in Resources */,
+				CAA732EB15D79DAF000656BB /* ICN_saved.png in Resources */,
+				CAA732EC15D79DAF000656BB /* ICN_saved@2x.png in Resources */,
+				CAA732ED15D79DAF000656BB /* ICN_saved_ON.png in Resources */,
+				CAA732EE15D79DAF000656BB /* ICN_saved_ON@2x.png in Resources */,
+				CAA732EF15D79DAF000656BB /* ICN_search.png in Resources */,
+				CAA732F015D79DAF000656BB /* ICN_search@2x.png in Resources */,
+				CAA732F115D79DAF000656BB /* ICN_search_ON.png in Resources */,
+				CAA732F215D79DAF000656BB /* ICN_search_ON@2x.png in Resources */,
+				CAA732F315D79DAF000656BB /* ICN_tab_info.png in Resources */,
+				CAA732F415D79DAF000656BB /* ICN_tab_info@2x.png in Resources */,
+				CAA732F515D79DAF000656BB /* ICN_tab_info_ON.png in Resources */,
+				CAA732F615D79DAF000656BB /* ICN_tab_info_ON@2x.png in Resources */,
+				CAA732F715D79DAF000656BB /* ICN_tab_search.png in Resources */,
+				CAA732F815D79DAF000656BB /* ICN_tab_search@2x.png in Resources */,
+				CAA732F915D79DAF000656BB /* ICN_tab_search_ON.png in Resources */,
+				CAA732FA15D79DAF000656BB /* ICN_tab_search_ON@2x.png in Resources */,
+				CAA732FB15D79DAF000656BB /* MainStoryboard_iPhone.storyboard in Resources */,
+				CAA7330D15D79DE8000656BB /* my_first.feature in Resources */,
+				CAA7330E15D79DE8000656BB /* launch_steps.rb in Resources */,
+				CAA7330F15D79DE8000656BB /* env.rb in Resources */,
+				CAA7331015D79DE8000656BB /* frank_static_resources.bundle in Resources */,
+				CAA7331115D79DE8000656BB /* frankify.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -568,6 +775,16 @@
 			files = (
 				AD4224C815A33FF3005A60C1 /* CRTabBarTests.m in Sources */,
 				AD4224D415A34024005A60C1 /* CRTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA732C215D79DAF000656BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA732C315D79DAF000656BB /* main.m in Sources */,
+				CAA732C415D79DAF000656BB /* CRTabBarAppDelegate.m in Sources */,
+				CAA732C515D79DAF000656BB /* CRTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +839,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -642,6 +863,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -704,6 +929,36 @@
 			};
 			name = Release;
 		};
+		CAA732FD15D79DAF000656BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CRTabBar/CRTabBar-Prefix.pch";
+				INFOPLIST_FILE = "CRTabBar copy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frank\"",
+				);
+				PRODUCT_NAME = "CRTabBar copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CAA732FE15D79DAF000656BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CRTabBar/CRTabBar-Prefix.pch";
+				INFOPLIST_FILE = "CRTabBar copy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frank\"",
+				);
+				PRODUCT_NAME = "CRTabBar copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -730,6 +985,15 @@
 			buildConfigurations = (
 				AD4224CF15A33FF3005A60C1 /* Debug */,
 				AD4224D015A33FF3005A60C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAA732FC15D79DAF000656BB /* Build configuration list for PBXNativeTarget "CRTabBarIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAA732FD15D79DAF000656BB /* Debug */,
+				CAA732FE15D79DAF000656BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
